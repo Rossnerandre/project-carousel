@@ -17,13 +17,13 @@
 <body>
   <div class="container">
     <div class="image-slider">
-      <div class="img fade active">
+      <div class="img fade">
         <img src="./src/img/cat.jpg" alt="">
       </div>
       <div class="img fade ">
         <img src="./src/img/mountain.jpg" alt="">
       </div>
-      <div class="img fade ">
+      <div class="img fade">
         <img src="./src/img/mountains.jpg" alt="">
       </div>
       <div class="img fade">
@@ -32,15 +32,17 @@
       <div class="img fade">
         <img src="./src/img/undefined.jpg" alt="">
       </div>
-      <div class="previous"><i class="fas fa-chevron-left "></i></div>
-      <div class="next"><i class=" fas fa-chevron-right "></i></div>
+      <div class="previous" onclick="sliderPlus(-1)"><i
+          class="fas fa-chevron-left"></i></div>
+      <div class="next" onclick="sliderPlus(+1)"><i
+          class="fas fa-chevron-right"></i></div>
     </div>
     <div class="dots">
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+      <div class="dot" onclick="currenteSlide(1)"></div>
+      <div class="dot" onclick="currenteSlide(2)"></div>
+      <div class="dot" onclick="currenteSlide(3)"></div>
+      <div class="dot" onclick="currenteSlide(4)"></div>
+      <div class="dot" onclick="currenteSlide(5)"></div>
     </div>
   </div>
   <script src="./src/js/main.js"></script>
