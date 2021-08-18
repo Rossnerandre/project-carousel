@@ -11,13 +11,13 @@
     href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
     crossorigin="anonymous">
-
 </head>
 
 <body>
-  <div class="container">
+  <div class="container bg-light">
+    <h1>Slider Simples</h1>
     <div class="image-slider">
-      <div class="img fade">
+      <div class="img fade active">
         <img src="./src/img/cat.jpg" alt="">
       </div>
       <div class="img fade ">
@@ -36,13 +36,49 @@
           class="fas fa-chevron-left"></i></div>
       <div class="next" onclick="sliderPlus(+1)"><i
           class="fas fa-chevron-right"></i></div>
+      <div class="dots">
+        <div class="dot" onclick="currenteSlide(1)"></div>
+        <div class="dot" onclick="currenteSlide(2)"></div>
+        <div class="dot" onclick="currenteSlide(3)"></div>
+        <div class="dot" onclick="currenteSlide(4)"></div>
+        <div class="dot" onclick="currenteSlide(5)"></div>
+      </div>
     </div>
-    <div class="dots">
-      <div class="dot" onclick="currenteSlide(1)"></div>
-      <div class="dot" onclick="currenteSlide(2)"></div>
-      <div class="dot" onclick="currenteSlide(3)"></div>
-      <div class="dot" onclick="currenteSlide(4)"></div>
-      <div class="dot" onclick="currenteSlide(5)"></div>
+  </div>
+  <div class="container bg-grey">
+    <h1>Slider with thumbnail</h1>
+    <div class="image-slider2">
+      <div class="img2 fade">
+        <img src="./src/img/cat.jpg" alt="">
+      </div>
+      <div class="img2 fade ">
+        <img src="./src/img/mountain.jpg" alt="">
+      </div>
+      <div class="img2 fade">
+        <img src="./src/img/mountains.jpg" alt="">
+      </div>
+      <div class="img2 fade">
+        <img src="./src/img/sea.jpg" alt="">
+      </div>
+      <div class="img2 fade">
+        <img src="./src/img/undefined.jpg" alt="">
+      </div>
+      <div class="previous" onclick="thumbPlus(-1)"><i
+          class="fas fa-chevron-left"></i></div>
+      <div class="next" onclick="thumbPlus(1)"><i
+          class="fas fa-chevron-right"></i></div>
+      <div class="thumbs">
+        <div class="thumb" onclick="currentThumb(1)"><img
+            src="./src/img/cat.jpg" alt=""></div>
+        <div class="thumb" onclick="currentThumb(2)"><img
+            src="./src/img/mountain.jpg" alt=""></div>
+        <div class="thumb" onclick="currentThumb(3)"><img
+            src="./src/img/mountains.jpg" alt=""></div>
+        <div class="thumb" onclick="currentThumb(4)"><img
+            src="./src/img/sea.jpg" alt=""></div>
+        <div class="thumb" onclick="currentThumb(5)"><img
+            src="./src/img/undefined.jpg" alt=""></div>
+      </div>
     </div>
   </div>
   <script src="./src/js/main.js"></script>
